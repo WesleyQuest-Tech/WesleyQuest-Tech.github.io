@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: splash
 author_profile: false
 ---
 
@@ -23,7 +23,8 @@ author_profile: false
       <h1 id="page-title" class="page__title">{{ page.title }}</h1>
     {% endunless %}
     {% for post in page.posts %}
-      {% include archive-single.html %}
+      <!-- {% include archive-single.html %} -->
+      {% include archive-grid.html %}
     {% endfor %}
   </div>
 </div>
