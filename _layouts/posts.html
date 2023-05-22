@@ -18,7 +18,7 @@ layout: splash
   {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
     {% include comments.html %}
   {% endif %}
-  {% elsif page.id and page.related %}
+  {% if page.id and page.related %}
     <div class="page__related">
       <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
       <div class="grid__wrapper">
